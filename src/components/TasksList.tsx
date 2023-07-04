@@ -1,5 +1,5 @@
 import React from "react";
-import { Alert, FlatList, FlatListProps, Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { FlatList, Image, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import Icon from "react-native-vector-icons/Feather";
 
 import trashIcon from "../assets/icons/trash/trash.png";
