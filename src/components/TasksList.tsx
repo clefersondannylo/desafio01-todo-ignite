@@ -1,10 +1,9 @@
 import React from 'react';
-import { FlatList, Image, TouchableOpacity, View, Text, StyleSheet, FlatListProps } from 'react-native';
+import { FlatList, FlatListProps, Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import Icon from 'react-native-vector-icons/Feather';
 
-import { ItemWrapper } from './ItemWrapper';
-
 import trashIcon from '../assets/icons/trash/trash.png'
+import { ItemWrapper } from './ItemWrapper';
 
 export interface Task {
   id: number;
@@ -21,7 +20,7 @@ interface TasksListProps {
 export function TasksList({ tasks, toggleTaskDone, removeTask }: TasksListProps) {
   return (
     <FlatList
-      // data={tasks}
+      data={tasks}
       keyExtractor={item => String(item.id)}
       contentContainerStyle={{ paddingBottom: 24 }}
       showsVerticalScrollIndicator={false}
